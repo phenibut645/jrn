@@ -2,12 +2,12 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-function hello(name) {
-return 'Hello World from ' + name + "!";
+function movie(name) {
+return 'Мой любимый фильм 8 миля';
 }
 
 app.get('/', (req, res) => {
-res.json({"text": hello("Nikita")});
+res.json({"text": movie()});
 });
 
 if (require.main === module) {
