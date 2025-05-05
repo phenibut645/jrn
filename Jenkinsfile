@@ -6,6 +6,11 @@ pipeline {
 				sh 'npm install'
 				}
 			}
+		stage('Jest tests'){
+			steps {
+				sh 'npm test'
+				}
+			}
 
 		stage('Run app') {
 			steps {
